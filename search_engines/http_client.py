@@ -10,7 +10,7 @@ class HttpClient(object):
     def __init__(self, timeout=TIMEOUT, proxy=PROXY):
         self.session = requests.session()
         self.session.proxies = self._set_proxy(proxy)
-        self.session.headers['User-Agent'] = ua_generator.generate()
+        self.session.headers['User-Agent'] = str(ua_generator.generate())
         self.session.headers['Accept-Language'] = 'en-GB,en;q=0.5'
 
         self.timeout = timeout
