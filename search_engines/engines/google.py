@@ -1,9 +1,11 @@
-from ..engine import SearchEngine
-from ..config import PROXY, TIMEOUT, FAKE_USER_AGENT
-from ..utils import unquote_url, quote_url
-from .. import output as out
-from bs4 import BeautifulSoup
 from urllib.parse import urlparse, parse_qs
+
+from bs4 import BeautifulSoup
+
+from .. import output as out
+from ..config import PROXY, TIMEOUT, FAKE_USER_AGENT
+from ..engine import SearchEngine
+from ..utils import unquote_url, quote_url
 
 
 class Google(SearchEngine):

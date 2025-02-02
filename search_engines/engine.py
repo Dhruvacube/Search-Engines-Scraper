@@ -1,13 +1,13 @@
-from bs4 import BeautifulSoup
-from time import sleep
 from random import uniform as random_uniform
-from collections import namedtuple
+from time import sleep
 
-from .results import SearchResults
-from .http_client import HttpClient
-from . import utils
-from . import output as out
+from bs4 import BeautifulSoup
+
 from . import config as cfg
+from . import output as out
+from . import utils
+from .http_client import HttpClient
+from .results import SearchResults
 
 
 class SearchEngine(object):

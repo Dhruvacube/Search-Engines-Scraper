@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
-
-from search_engines.engine import SearchEngine
 from search_engines.config import PROXY, TIMEOUT, FAKE_USER_AGENT
+from search_engines.engine import SearchEngine
 
 
 class Metager(SearchEngine):

@@ -1,6 +1,5 @@
-from ..engine import SearchEngine
 from ..config import PROXY, TIMEOUT, FAKE_USER_AGENT
-from ..utils import unquote_url
+from ..engine import SearchEngine
 
 
 class Dogpile(SearchEngine):

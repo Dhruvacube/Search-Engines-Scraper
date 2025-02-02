@@ -1,5 +1,5 @@
-from ..engine import SearchEngine
 from ..config import PROXY, TIMEOUT, FAKE_USER_AGENT
+from ..engine import SearchEngine
 
 
 class Mojeek(SearchEngine):

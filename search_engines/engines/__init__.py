@@ -1,18 +1,17 @@
 from .aol import Aol
 from .ask import Ask
 from .bing import Bing
+from .brave import Brave
 from .dogpile import Dogpile
 from .duckduckgo import Duckduckgo
 from .google import Google
 from .mojeek import Mojeek
+from .qwant import Qwant
 from .startpage import Startpage
 from .torch import Torch
 from .yahoo import Yahoo
-from .qwant import Qwant
-from .brave import Brave
 
-
-search_engines_dict = { 
+search_engines_dict = {
     'google': Google, 
     'bing': Bing, 
     'yahoo': Yahoo, 

@@ -1,7 +1,7 @@
 from json import loads
 
-from ..engine import SearchEngine
 from ..config import PROXY, TIMEOUT
+from ..engine import SearchEngine
 from ..utils import unquote_url
 
 

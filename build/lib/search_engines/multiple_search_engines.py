@@ -1,7 +1,7 @@
-from .results import SearchResults
-from .engines import search_engines_dict
-from . import output as out
 from . import config as cfg
+from . import output as out
+from .engines import search_engines_dict
+from .results import SearchResults
 
 
 class MultipleSearchEngines(object):

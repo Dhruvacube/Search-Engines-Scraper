@@ -1,4 +1,4 @@
-from os import path as os_path, pardir as os_pardir, name as os_name
+from os import path as os_path
 from sys import version_info
 
 

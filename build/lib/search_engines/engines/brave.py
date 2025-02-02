@@ -1,5 +1,5 @@
-from ..engine import SearchEngine
 from ..config import PROXY, TIMEOUT
+from ..engine import SearchEngine
 
 
 class Brave(SearchEngine):

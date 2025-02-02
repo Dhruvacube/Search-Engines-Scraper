@@ -1,6 +1,6 @@
-from ..engine import SearchEngine
-from ..config import TOR, TIMEOUT
 from .. import output as out
+from ..config import TOR, TIMEOUT
+from ..engine import SearchEngine
 
 
 class Torch(SearchEngine):

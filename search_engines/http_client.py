@@ -1,9 +1,11 @@
-import requests
 from collections import namedtuple
 
-from .config import TIMEOUT, PROXY, USER_AGENT
-from . import utils as utl
+import requests
 import ua_generator
+
+from . import utils as utl
+from .config import TIMEOUT, PROXY
+
 
 class HttpClient(object):
     '''Performs HTTP requests. A `requests` wrapper, essentialy'''
