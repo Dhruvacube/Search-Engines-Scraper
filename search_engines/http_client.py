@@ -1,16 +1,16 @@
 import requests
 from collections import namedtuple
 
-from .config import TIMEOUT, PROXY, USER_AGENT
+from .config import TIMEOUT, PROXY
 from . import utils as utl
-
+import ua_generator
 
 class HttpClient(object):
     '''Performs HTTP requests. A `requests` wrapper, essentialy'''
     def __init__(self, timeout=TIMEOUT, proxy=PROXY):
         self.session = requests.session()
         self.session.proxies = self._set_proxy(proxy)
-        self.session.headers['User-Agent'] = USER_AGENT
+        self.session.headers['User-Agent'] = str(ua_generator.generate())
         self.session.headers['Accept-Language'] = 'en-GB,en;q=0.5'
 
         self.timeout = timeout
@@ -49,4 +49,5 @@ class HttpClient(object):
                 raise ValueError('Invalid proxy format!')
             proxy = {'http':proxy, 'https':proxy}
         return proxy
+
 
